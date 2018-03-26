@@ -287,10 +287,10 @@ wait = {
     'sticker':False,  
     'timeline':True,
     "Timeline":True,
-    "comment":"Bot Auto Like ©By : Nadya\nContact Me : 👉 line.me/ti/p/~nad_nad.",    
+    "comment":"Bot Auto Like ©By : Nadya\nContact Me : 👉 line.me/ti/p/~sepriche",    
     "commentOn":True,
     "commentBlack":{},
-    "message":"Thx For Add Me (^_^)\nInvite Me To Your Group ヘ(^_^)ヘ",    
+    "message":"Thx For Add Me (^_^)\nInvite Me To Your Group ",    
     "blacklist":{},
     "wblacklist":False,
     "dblacklist":False,
@@ -620,7 +620,7 @@ def bot(op):
                         nadya.leaveGroup(op.param1)                        
 		    else:
                         nadya.acceptGroupInvitation(op.param1)
-			nadya.sendText(op.param1,"☆Ketik ☞Help☜ Untuk Bantuan☆\n☆Harap Gunakan Dengan Bijak ^_^ ☆")
+			nadya.sendText(op.param1,"☆Hay semua☆\nsalken ya")
                         		    
  
 	    if mid in op.param3:
@@ -792,7 +792,7 @@ def bot(op):
             ginfo = nadya.getGroup(op.param1)
             contact = nadya.getContact(op.param2)
             image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
-            nadya.sendText(op.param1,"Hallo " + nadya.getContact(op.param2).displayName + "\nWelcome To ☞ " + str(ginfo.name) + " ☜" + "\nBudayakan Cek Note\nDan Semoga Betah Disini ^_^")
+            nadya.sendText(op.param1,"Hay " + nadya.getContact(op.param2).displayName + "\nSelamat Datang di ☞ " + str(ginfo.name) + " ☜" + "\n😆\nSalam santun dan salam kenal ya kk🙏")
             c = Message(to=op.param1, from_=None, text=None, contentType=13)
             c.contentMetadata={'mid':op.param2}
             nadya.sendMessage(c)  
@@ -809,7 +809,7 @@ def bot(op):
           if wait["Sambutan"] == True:
             if op.param2 in Creator:
                 return
-            nadya.sendText(op.param1,"Good Bye " + nadya.getContact(op.param2).displayName +  "\nSee You Next Time . . . (p′︵‵。) 🤗")
+            nadya.sendText(op.param1,"Good Bye " + nadya.getContact(op.param2).displayName +  "\naih, kenapa kok left, Baper ya😆")
             d = Message(to=op.param1, from_=None, text=None, contentType=7)
             d.contentMetadata={
                                     "STKID": "13269542",
@@ -871,7 +871,7 @@ def bot(op):
                  if wait["detectMention2"] == True:          
                     contact = nadya.getContact(msg.from_)
                     cName = contact.displayName
-                    balas = ["Sekali lagi nge tag gw sumpahin jomblo seumur hidup!","Nggak Usah Tag-Tag! Kalo Penting Langsung Pc Aja","Woii " + cName + " Jangan Ngetag, Riibut!"]
+                    balas = ["Sekali lagi nge tag gw sumpahin jomblo seumur hidup!","Sekali lagi tag, sumpah,, bakal gue pipisin"," jangan lupa follow di smule aim @BSS1_SEPRI_S1E " + cName + " yang suka ngetag gue, pasti mau ngajak nikung🙄"]
                     ret_ = random.choice(balas)
                     name = re.findall(r'@(\w+)', msg.text)
                     mention = ast.literal_eval(msg.contentMetadata['MENTION'])
@@ -892,8 +892,8 @@ def bot(op):
                  if wait["detectMention3"] == True:          
                     contact = nadya.getContact(msg.from_)
                     cName = contact.displayName
-                    balas = ["Woii " + cName + ", Dasar Jones Ngetag Mulu!"]
-                    balas1 = "Ini Foto Sii Jones Yang Suka Ngetag. . ."
+                    balas = ["Aih " + cName + ", Ada yang minta didesahin"]
+                    balas1 = "ini foto org yang minta didesahin"
                     ret_ = random.choice(balas)
                     image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
                     name = re.findall(r'@(\w+)', msg.text)
