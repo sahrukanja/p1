@@ -22,7 +22,7 @@ sys.setdefaultencoding('utf-8')
 
 selfMessage ="""
 ╔═════════════════════════
-║            ☆☞ S E L F ☜☆
+║            Help
 ╠═════════════════════════
 ╠➩〘Hi〙
 ╠➩〘Me〙
@@ -47,17 +47,10 @@ selfMessage ="""
 ╠➩〘Friendlist〙
 ╠➩〘Micadd @〙
 ╠➩〘Micdel @〙
-╠➩〘Miclist〙
-╠═════════════════════════
-║             
-║    SepriBot versi 1123V
-╚═════════════════════════
+╠➩〘Miclist〙    
 """
 
 botMessage ="""
-╔═════════════════════════
-║             ☆☞ B O T ☜☆
-╠═════════════════════════
 ╠➩〘Absen〙
 ╠➩〘Respon〙
 ╠➩〘Runtime〙
@@ -68,16 +61,8 @@ botMessage ="""
 ╠➩〘Myname (Text)〙
 ╠➩〘@bye〙
 ╠➩〘Bot on/off〙
-╠═════════════════════════
-║            
-║    SepriBot versi 1123V
-╚═════════════════════════
 """
-
 mediaMessage ="""
-╔═════════════════════════
-║           ☆☞ M E D I A ☜☆
-╠═════════════════════════
 ╠➩〘Gift〙
 ╠➩〘Gift1 @ s/d Gift10 @〙
 ╠➩〘Giftbycontact〙
@@ -109,16 +94,8 @@ mediaMessage ="""
 ╠➩〘Id@en Text (Translate ID Ke En〙
 ╠➩〘Id@th Text (Translate ID Ke TH〙
 ╠➩〘En@id Text (Translate En Ke ID〙
-╠═════════════════════════
-║             
-║   SepriBot versi 1123V
-╚═════════════════════════
 """
-
 groupMessage ="""
-╔═════════════════════════
-║           ☆☞ G R O U P ☜☆
-╠═════════════════════════
 ╠➩〘Welcome〙
 ╠➩〘Say welcome〙
 ╠➩〘Invite creator〙
@@ -142,17 +119,9 @@ groupMessage ="""
 ╠➩〘Memlist〙
 ╠➩〘Getgroup image〙
 ╠➩〘Urlgroup Image〙
-╠═════════════════════════
-║             
-║    SepriBot versi 1123V 
-╚═════════════════════════
 """
 tjia="u61a9b5ce8de3eb51a859410c9834e5c8"
-
 setMessage ="""
-╔═════════════════════════
-║              ☆☞ S E T ☜☆
-╠═════════════════════════
 ╠➩〘Sambutan on/off〙
 ╠➩〘Mimic on/off〙
 ╠➩〘Url on/off〙
@@ -161,16 +130,8 @@ setMessage ="""
 ╠➩〘Contact on/off〙
 ╠➩〘Sticker on〙
 ╠➩〘Simisimi on/off〙
-╠═════════════════════════
-║             
-║    SepriBot versi 1123 modifed
-╚═════════════════════════
 """
-
 creatorMessage ="""
-╔═════════════════════════
-║         ☆☞ C R E A T O R ☜☆
-╠═════════════════════════
 ╠➩〘Crash〙
 ╠➩〘Kickall〙
 ╠➩〘Bc: (Text)〙
@@ -180,16 +141,9 @@ creatorMessage ="""
 ╠➩〘Tag on/off〙
 ╠➩〘Bot restart〙
 ╠➩〘Turn off〙
-╠═════════════════════════
-║             
-║    SepriBot versi 1123 modifed
-╚═════════════════════════
 """
 
 adminMessage ="""
-╔═════════════════════════
-║            ☆☞ A D M I N ☜☆
-╠═════════════════════════
 ╠➩〘Allprotect on/off〙
 ╠➩〘Ban〙
 ╠➩〘Unban〙
@@ -221,16 +175,8 @@ adminMessage ="""
 ╠➩〘Respon2 on/off〙
 ╠➩〘Respon3 on/off〙
 ╠➩〘Responkick on/off〙
-╠═════════════════════════
-║             
-║    SepriBot versi 1123 modifed
-╚═════════════════════════
 """
-
 helpMessage ="""
-╔═════════════════════════
-║              ☆☞ H E L P ☜☆
-╠═════════════════════════
 ╠➩〘Help self〙
 ╠➩〘Help bot〙
 ╠➩〘Help group〙
@@ -243,13 +189,7 @@ helpMessage ="""
 ╠➩〘Speed〙
 ╠➩〘Speed test〙
 ╠➩〘Status〙
-╠═════════════════════════
-║    
-║    SepriBot versi 1123 modifed
-╚═════════════════════════
 """
-
-
 KAC=[nadya]
 mid = nadya.getProfile().mid
 Bots=[mid]
@@ -287,7 +227,7 @@ wait = {
     'sticker':False,  
     'timeline':True,
     "Timeline":True,
-    "comment":"Bot Auto Like ©By : Nadya\nContact Me : 👉 line.me/ti/p/~nad_nad.",    
+    "comment":"Bot Auto Like ©By : Nadya\nContact Me : 👉 line.me/ti/p/~sepriche",    
     "commentOn":True,
     "commentBlack":{},
     "message":"Thx For Add Me (^_^)\nInvite Me To Your Group ヘ(^_^)ヘ",    
@@ -792,15 +732,15 @@ def bot(op):
             ginfo = nadya.getGroup(op.param1)
             contact = nadya.getContact(op.param2)
             image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
-            nadya.sendText(op.param1,"Hallo " + nadya.getContact(op.param2).displayName + "\nWelcome To ☞ " + str(ginfo.name) + " ☜" + "\nBudayakan Cek Note\nDan Semoga Betah Disini ^_^")
+            nadya.sendText(op.param1,"Hallo " + nadya.getContact(op.param2).displayName + "\nHai kk Welcome di " + str(ginfo.name) + " " + "\nSalken ya kk\n🙏")
             c = Message(to=op.param1, from_=None, text=None, contentType=13)
             c.contentMetadata={'mid':op.param2}
             nadya.sendMessage(c)  
             nadya.sendImageWithURL(op.param1,image)
             d = Message(to=op.param1, from_=None, text=None, contentType=7)
             d.contentMetadata={
-                                    "STKID": "13269548",
-                                    "STKPKGID": "1329191",
+                                    "STKID": "11796590",
+                                    "STKPKGID": "1291200",
                                     "STKVER": "1" }                
             nadya.sendMessage(d)             
             print "MEMBER JOIN TO GROUP"
@@ -809,11 +749,11 @@ def bot(op):
           if wait["Sambutan"] == True:
             if op.param2 in Creator:
                 return
-            nadya.sendText(op.param1,"Good Bye " + nadya.getContact(op.param2).displayName +  "\nSee You Next Time . . . (p′︵‵。) 🤗")
+            nadya.sendText(op.param1,"Mampir lagi ya ka😄 " + nadya.getContact(op.param2).displayName +  "\njangan lupa sandalnya ketinggalan😅")
             d = Message(to=op.param1, from_=None, text=None, contentType=7)
             d.contentMetadata={
-                                    "STKID": "13269542",
-                                    "STKPKGID": "1329191",
+                                    "STKID": "11796590",
+                                    "STKPKGID": "1291200",
                                     "STKVER": "1" }                
             nadya.sendMessage(d)                  
             print "MEMBER HAS LEFT THE GROUP"
@@ -857,7 +797,7 @@ def bot(op):
                  if wait["detectMention"] == True:
                      contact = nadya.getContact(msg.from_)
                      cName = contact.displayName
-                     balas = ["Dont Tag!! Lagi Sibuk",cName + " Ngapain Ngetag?",cName + " Nggak Usah Tag-Tag! Kalo Penting Langsung Pc Aja","Dia Lagi Off", cName + " Kenapa Tag Saya?","Dia Lagi Tidur\nJangan Di Tag " + cName, "Jangan Suka Tag Gua " + cName, "Kamu Siapa " + cName + "?", "Ada Perlu Apa " + cName + "?","Woii " + cName + " Jangan Ngetag, Riibut!"]
+                     balas = ["Oit",cName + " Hadir",cName + " yang tag aim, berarti minta ditikung","jangan panggil2 kalau ga mau dihamilin😂", cName + " follow donk id smuleku @BSS1_SEPRI_S1E","Aih jones kerjaannya tag mulu\nIya kk, ada yang bisa dibanting " + cName, "kk minta ditikung ya? Kok tag mulu😅 " + cName, "jangan tag aim, kalau ga mau dihamilin😂 " + cName + "hadir kk", "Oit "]
                      ret_ = random.choice(balas)
                      name = re.findall(r'@(\w+)', msg.text)
                      mention = ast.literal_eval(msg.contentMetadata['MENTION'])
@@ -871,7 +811,7 @@ def bot(op):
                  if wait["detectMention2"] == True:          
                     contact = nadya.getContact(msg.from_)
                     cName = contact.displayName
-                    balas = ["Sekali lagi nge tag gw sumpahin jomblo seumur hidup!","Nggak Usah Tag-Tag! Kalo Penting Langsung Pc Aja","Woii " + cName + " Jangan Ngetag, Riibut!"]
+                    balas = ["oit","oit","oit " + cName + " oit"]
                     ret_ = random.choice(balas)
                     name = re.findall(r'@(\w+)', msg.text)
                     mention = ast.literal_eval(msg.contentMetadata['MENTION'])
@@ -882,8 +822,8 @@ def bot(op):
                                   msg.contentType = 7   
                                   msg.text = None
                                   msg.contentMetadata = {
-                                                       "STKID": "20001316",
-                                                       "STKPKGID": "1582380",
+                                                       "STKID": "11796613",
+                                                       "STKPKGID": "1291200",
                                                        "STKVER": "1" }
                                   nadya.sendMessage(msg)                                
                                   break
@@ -892,8 +832,8 @@ def bot(op):
                  if wait["detectMention3"] == True:          
                     contact = nadya.getContact(msg.from_)
                     cName = contact.displayName
-                    balas = ["Woii " + cName + ", Dasar Jones Ngetag Mulu!"]
-                    balas1 = "Ini Foto Sii Jones Yang Suka Ngetag. . ."
+                    balas = ["Aih " + cName + ", Ada yang ngetag aim"]
+                    balas1 = "cie cie fotonya😂"
                     ret_ = random.choice(balas)
                     image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
                     name = re.findall(r'@(\w+)', msg.text)
@@ -907,8 +847,8 @@ def bot(op):
                                   msg.contentType = 7   
                                   msg.text = None
                                   msg.contentMetadata = {
-                                                       "STKID": "11764508",
-                                                       "STKPKGID": "6641",
+                                                       "STKID": "33237801",
+                                                       "STKPKGID": "3145354",
                                                        "STKVER": "1" }
                                   nadya.sendMessage(msg)                                
                                   break  
@@ -1178,28 +1118,28 @@ def bot(op):
                                       break
                                   
  
-            elif msg.text in ["Key creator","help creator","Help creator"]:
+            elif msg.text in ["Key creator","help creator","#Help"]:
                 nadya.sendText(msg.to,creatorMessage)
 
-            elif msg.text in ["Key group","help group","Help group"]:
+            elif msg.text in ["Key group","help group","#Help"]:
                 nadya.sendText(msg.to,groupMessage)
 
             elif msg.text in ["Key","help","Help"]:
                 nadya.sendText(msg.to,helpMessage)
 
-            elif msg.text in ["Key self","help self","Help self"]:
+            elif msg.text in ["Key self","help self","#Help"]:
                 nadya.sendText(msg.to,selfMessage)
 
-            elif msg.text in ["Key bot","help bot","Help bot"]:
+            elif msg.text in ["Key bot","help bot","#Help"]:
                 nadya.sendText(msg.to,botMessage)
 
-            elif msg.text in ["Key set","help set","Help set"]:
+            elif msg.text in ["Key set","help set","#Help"]:
                 nadya.sendText(msg.to,setMessage)
 
-            elif msg.text in ["Key media","help media","Help media"]:
+            elif msg.text in ["Key media","help media","#Help"]:
                 nadya.sendText(msg.to,mediaMessage)
                 
-            elif msg.text in ["Key admin","help admin","Help admin"]:
+            elif msg.text in ["Key admin","help admin","#Help"]:
                 nadya.sendText(msg.to,adminMessage)               
                 
 
